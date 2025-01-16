@@ -1,0 +1,103 @@
+{
+  "resources": [
+    {
+      "id": "equipment",
+      "title": "Kitchen Equipment",
+      "type": "asset",
+      "items": [
+        {
+          "name": "Professional mixer",
+          "cost": 500,
+          "priority": "high"
+        },
+        {
+          "name": "Baking sheets and pans",
+          "cost": 300,
+          "priority": "high"
+        },
+        {
+          "name": "Storage containers",
+          "cost": 200,
+          "priority": "medium"
+        },
+        {
+          "name": "Portable warmers",
+          "cost": 1000,
+          "priority": "low"
+        }
+      ],
+      "estimatedCost": 2000
+    },
+    {
+      "id": "permits",
+      "title": "Permits and Licenses",
+      "type": "legal",
+      "items": [
+        {
+          "name": "Business license",
+          "cost": 200,
+          "priority": "high"
+        },
+        {
+          "name": "Food handler's permit",
+          "cost": 100,
+          "priority": "high"
+        },
+        {
+          "name": "Home kitchen certification",
+          "cost": 200,
+          "priority": "high"
+        }
+      ],
+      "estimatedCost": 500
+    },
+    {
+      "id": "marketing",
+      "title": "Marketing Materials",
+      "type": "digital",
+      "items": [
+        {
+          "name": "Website development",
+          "cost": 500,
+          "priority": "high"
+        },
+        {
+          "name": "Business cards",
+          "cost": 100,
+          "priority": "medium"
+        },
+        {
+          "name": "Menu templates",
+          "cost": 200,
+          "priority": "medium"
+        },
+        {
+          "name": "Social media assets",
+          "cost": 200,
+          "priority": "medium"
+        }
+      ],
+      "estimatedCost": 1000
+    }
+  ],
+  "timeline": [
+    {
+      "id": "setup-phase",
+      "title": "Business Setup",
+      "start": "2024-04-01",
+      "end": "2024-04-30",
+      "resources": ["permits", "equipment"],
+      "dependencies": [],
+      "progress": 0
+    },
+    {
+      "id": "marketing-phase",
+      "title": "Marketing Setup",
+      "start": "2024-04-15",
+      "end": "2024-05-15",
+      "resources": ["marketing"],
+      "dependencies": ["setup-phase"],
+      "progress": 0
+    }
+  ]
+}

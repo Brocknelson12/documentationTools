@@ -1,0 +1,729 @@
+{
+  "businessInfo": {
+    "name": "Sarah's Kitchen",
+    "owner": "Sarah Chen",
+    "description": "Artisanal food business specializing in homemade baked goods, catering services, and cooking classes",
+    "startDate": "2024-04-01",
+    "timeCommitment": "1 hour per day",
+    "vision": "To bring joy through delicious, homemade food while building a sustainable local business",
+    "services": [
+      {
+        "name": "Custom Baked Goods",
+        "description": "Artisanal cakes, pastries, and breads",
+        "priceRange": "$20-200"
+      },
+      {
+        "name": "Catering Services",
+        "description": "Small events and private parties",
+        "priceRange": "$200-1000"
+      },
+      {
+        "name": "Cooking Classes",
+        "description": "Small group baking workshops",
+        "priceRange": "$50-100 per person"
+      }
+    ]
+  },
+
+  "goals": {
+    "id": "root",
+    "title": "Food Business Goals",
+    "color": "#BFDBFE",
+    "isComplete": false,
+    "children": [
+      {
+        "id": "foundation",
+        "title": "Business Foundation",
+        "color": "#BFDBFE",
+        "isComplete": false,
+        "children": [
+          {
+            "id": "legal-setup",
+            "title": "Legal Setup",
+            "color": "#BFDBFE",
+            "isComplete": false,
+            "children": [
+              {
+                "id": "business-registration",
+                "title": "Register Business",
+                "color": "#BFDBFE",
+                "isComplete": false,
+                "description": "Complete LLC registration and obtain EIN"
+              },
+              {
+                "id": "food-permits",
+                "title": "Obtain Food Permits",
+                "color": "#BFDBFE",
+                "isComplete": false,
+                "description": "Secure necessary food handling and home kitchen permits"
+              },
+              {
+                "id": "insurance",
+                "title": "Get Business Insurance",
+                "color": "#BFDBFE",
+                "isComplete": false,
+                "description": "Obtain liability and business insurance coverage"
+              }
+            ]
+          },
+          {
+            "id": "kitchen-setup",
+            "title": "Kitchen Setup",
+            "color": "#BFDBFE",
+            "isComplete": false,
+            "children": [
+              {
+                "id": "equipment",
+                "title": "Essential Equipment",
+                "color": "#BFDBFE",
+                "isComplete": false,
+                "description": "Purchase and set up professional baking equipment"
+              },
+              {
+                "id": "storage",
+                "title": "Storage Solutions",
+                "color": "#BFDBFE",
+                "isComplete": false,
+                "description": "Organize ingredient and equipment storage systems"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "product-development",
+        "title": "Product Development",
+        "color": "#FBCFE8",
+        "isComplete": false,
+        "children": [
+          {
+            "id": "signature-recipes",
+            "title": "Signature Recipes",
+            "color": "#FBCFE8",
+            "isComplete": false,
+            "children": [
+              {
+                "id": "recipe-testing",
+                "title": "Test Core Recipes",
+                "color": "#FBCFE8",
+                "isComplete": false,
+                "description": "Develop and test 5 signature baked goods recipes"
+              },
+              {
+                "id": "costing",
+                "title": "Cost Analysis",
+                "color": "#FBCFE8",
+                "isComplete": false,
+                "description": "Calculate ingredient costs and set pricing"
+              }
+            ]
+          },
+          {
+            "id": "menu-planning",
+            "title": "Menu Planning",
+            "color": "#FBCFE8",
+            "isComplete": false,
+            "children": [
+              {
+                "id": "catering-menu",
+                "title": "Catering Menu",
+                "color": "#FBCFE8",
+                "isComplete": false,
+                "description": "Design tiered catering packages"
+              },
+              {
+                "id": "class-curriculum",
+                "title": "Cooking Class Plans",
+                "color": "#FBCFE8",
+                "isComplete": false,
+                "description": "Develop beginner-friendly baking class curriculum"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "marketing",
+        "title": "Marketing Strategy",
+        "color": "#BBF7D0",
+        "isComplete": false,
+        "children": [
+          {
+            "id": "online-presence",
+            "title": "Online Presence",
+            "color": "#BBF7D0",
+            "isComplete": false,
+            "children": [
+              {
+                "id": "website",
+                "title": "Website Development",
+                "color": "#BBF7D0",
+                "isComplete": false,
+                "description": "Create website with ordering system"
+              },
+              {
+                "id": "social-media",
+                "title": "Social Media Setup",
+                "color": "#BBF7D0",
+                "isComplete": false,
+                "description": "Establish Instagram and Facebook business accounts"
+              }
+            ]
+          },
+          {
+            "id": "local-marketing",
+            "title": "Local Marketing",
+            "color": "#BBF7D0",
+            "isComplete": false,
+            "children": [
+              {
+                "id": "partnerships",
+                "title": "Local Partnerships",
+                "color": "#BBF7D0",
+                "isComplete": false,
+                "description": "Partner with local cafes and event planners"
+              },
+              {
+                "id": "events",
+                "title": "Community Events",
+                "color": "#BBF7D0",
+                "isComplete": false,
+                "description": "Participate in local food markets and fairs"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "workflows": [
+    {
+      "id": "recipe-development",
+      "title": "Recipe Development Process",
+      "description": "Step-by-step workflow for creating and testing new recipes",
+      "goalId": "recipe-testing",
+      "nodes": [
+        {
+          "id": "start",
+          "type": "start",
+          "position": { "x": 400, "y": 50 },
+          "text": "Start Recipe Development",
+          "connections": ["research"]
+        },
+        {
+          "id": "research",
+          "type": "task",
+          "position": { "x": 400, "y": 150 },
+          "text": "Research Recipe Ideas",
+          "description": "Research seasonal ingredients and trending recipes",
+          "connections": ["initial-test"]
+        },
+        {
+          "id": "initial-test",
+          "type": "task",
+          "position": { "x": 400, "y": 250 },
+          "text": "Initial Recipe Test",
+          "description": "First test bake with basic measurements",
+          "connections": ["test-review"]
+        },
+        {
+          "id": "test-review",
+          "type": "decision",
+          "position": { "x": 400, "y": 350 },
+          "text": "Recipe Successful?",
+          "description": "Evaluate taste, texture, and presentation",
+          "connections": ["adjust-recipe", "document-recipe"]
+        },
+        {
+          "id": "adjust-recipe",
+          "type": "task",
+          "position": { "x": 200, "y": 450 },
+          "text": "Adjust Recipe",
+          "description": "Modify ingredients or instructions",
+          "connections": ["initial-test"]
+        },
+        {
+          "id": "document-recipe",
+          "type": "task",
+          "position": { "x": 400, "y": 450 },
+          "text": "Document Recipe",
+          "description": "Write detailed recipe instructions",
+          "connections": ["cost-analysis"]
+        },
+        {
+          "id": "cost-analysis",
+          "type": "task",
+          "position": { "x": 400, "y": 550 },
+          "text": "Calculate Costs",
+          "description": "Determine ingredient costs and pricing",
+          "connections": ["end"]
+        },
+        {
+          "id": "end",
+          "type": "end",
+          "position": { "x": 400, "y": 650 },
+          "text": "Recipe Complete",
+          "connections": []
+        }
+      ]
+    },
+    {
+      "id": "catering-service",
+      "title": "Catering Service Process",
+      "description": "End-to-end workflow for handling catering orders",
+      "goalId": "catering-menu",
+      "nodes": [
+        {
+          "id": "inquiry",
+          "type": "start",
+          "position": { "x": 400, "y": 50 },
+          "text": "Client Inquiry",
+          "connections": ["consultation"]
+        },
+        {
+          "id": "consultation",
+          "type": "task",
+          "position": { "x": 400, "y": 150 },
+          "text": "Initial Consultation",
+          "description": "Discuss event details and requirements",
+          "connections": ["menu-planning"]
+        },
+        {
+          "id": "menu-planning",
+          "type": "task",
+          "position": { "x": 400, "y": 250 },
+          "text": "Menu Planning",
+          "description": "Design custom menu based on client needs",
+          "connections": ["quote"]
+        },
+        {
+          "id": "quote",
+          "type": "task",
+          "position": { "x": 400, "y": 350 },
+          "text": "Provide Quote",
+          "description": "Calculate costs and send proposal",
+          "connections": ["approval"]
+        },
+        {
+          "id": "approval",
+          "type": "decision",
+          "position": { "x": 400, "y": 450 },
+          "text": "Client Approval?",
+          "connections": ["deposit", "revise-quote"]
+        },
+        {
+          "id": "revise-quote",
+          "type": "task",
+          "position": { "x": 200, "y": 550 },
+          "text": "Revise Quote",
+          "description": "Adjust menu or pricing",
+          "connections": ["approval"]
+        },
+        {
+          "id": "deposit",
+          "type": "task",
+          "position": { "x": 400, "y": 550 },
+          "text": "Collect Deposit",
+          "description": "Process initial payment",
+          "connections": ["end"]
+        },
+        {
+          "id": "end",
+          "type": "end",
+          "position": { "x": 400, "y": 650 },
+          "text": "Order Confirmed",
+          "connections": []
+        }
+      ]
+    }
+  ],
+
+  "timeline": [
+    {
+      "id": "month-1",
+      "title": "Business Setup",
+      "start": "2024-04-01",
+      "end": "2024-04-30",
+      "category": "foundation",
+      "status": "planned",
+      "description": "Complete legal requirements and basic setup",
+      "tasks": [
+        {
+          "title": "Register business name",
+          "duration": "5 days",
+          "effort": "1 hour/day"
+        },
+        {
+          "title": "Apply for permits",
+          "duration": "10 days",
+          "effort": "1 hour/day"
+        },
+        {
+          "title": "Set up home kitchen",
+          "duration": "7 days",
+          "effort": "1 hour/day"
+        },
+        {
+          "title": "Create initial recipes",
+          "duration": "14 days",
+          "effort": "1 hour/day"
+        }
+      ]
+    },
+    {
+      "id": "month-2",
+      "title": "Online Presence",
+      "start": "2024-05-01",
+      "end": "2024-05-31",
+      "category": "marketing",
+      "status": "planned",
+      "description": "Establish digital presence and marketing materials",
+      "tasks": [
+        {
+          "title": "Build website",
+          "duration": "14 days",
+          "effort": "1 hour/day"
+        },
+        {
+          "title": "Set up social media accounts",
+          "duration": "3 days",
+          "effort": "1 hour/day"
+        },
+        {
+          "title": "Create content calendar",
+          "duration": "5 days",
+          "effort": "1 hour/day"
+        },
+        {
+          "title": "Take product photos",
+          "duration": "7 days",
+          "effort": "1 hour/day"
+        }
+      ]
+    },
+    {
+      "id": "month-3",
+      "title": "Service Launch",
+      "start": "2024-06-01",
+      "end": "2024-06-30",
+      "category": "product",
+      "status": "planned",
+      "description": "Begin offering services to customers",
+      "tasks": [
+        {
+          "title": "Launch catering service",
+          "duration": "7 days",
+          "effort": "1 hour/day"
+        },
+        {
+          "title": "Start cooking classes",
+          "duration": "14 days",
+          "effort": "1 hour/day"
+        },
+        {
+          "title": "Begin local marketing",
+          "duration": "30 days",
+          "effort": "1 hour/day"
+        },
+        {
+          "title": "Network with local businesses",
+          "duration": "30 days",
+          "effort": "1 hour/day"
+        }
+      ]
+    }
+  ],
+
+  "tasks": {
+    "groups": [
+      {
+        "id": "setup",
+        "title": "Initial Setup",
+        "tasks": [
+          {
+            "id": "task-1",
+            "title": "Register Business Name",
+            "type": "legal",
+            "status": "not-started",
+            "priority": "high",
+            "dependencies": [],
+            "goalId": "legal-setup",
+            "description": "Complete LLC registration process",
+            "estimatedTime": "5 hours",
+            "deadline": "2024-04-07"
+          },
+          {
+            "id": "task-2",
+            "title": "Kitchen Equipment List",
+            "type": "preparation",
+            "status": "in-progress",
+            "priority": "high",
+            "dependencies": [],
+            "goalId": "kitchen-setup",
+            "description": "Create list of required equipment and costs",
+            "estimatedTime": "2 hours",
+            "deadline": "2024-04-10"
+          }
+        ]
+      },
+      {
+        "id": "recipes",
+        "title": "Recipe Development",
+        "tasks": [
+          {
+            "id": "task-3",
+            "title": "Test Core Recipes",
+            "type": "product",
+            "status": "not-started",
+            "priority": "high",
+            "dependencies": ["task-2"],
+            "goalId": "recipe-testing",
+            "description": "Develop and test 5 signature recipes",
+            "estimatedTime": "15 hours",
+            "deadline": "2024-04-30"
+          },
+          {
+            "id": "task-4",
+            "title": "Create Recipe Documentation",
+            "type": "content",
+            "status": "not-started",
+            "priority": "medium",
+            "dependencies": ["task-3"],
+            "goalId": "recipe-testing",
+            "description": "Document recipes with photos and instructions",
+            "estimatedTime": "10 hours",
+            "deadline": "2024-05-07"
+          }
+        ]
+      }
+    ]
+  },
+
+  "organization": {
+    "roles": [
+      {
+        "id": "owner",
+        "title": "Business Owner",
+        "area": "operations",
+        "responsibilities": [
+          "Overall business management",
+          "Menu planning",
+          "Client relations",
+          "Marketing strategy"
+        ],
+        "skills": [
+          "Baking expertise",
+          "Food safety knowledge",
+          "Customer service",
+          "Basic photography"
+        ],
+        "workload": "40 hours/week"
+      },
+      {
+        "id": "future-1",
+        "title": "Part-time Assistant",
+        "area": "operations",
+        "responsibilities": [
+          "Food preparation",
+          "Event support",
+          "Kitchen maintenance"
+        ],
+        "skills": [
+          "Basic baking knowledge",
+          "Food handling certification",
+          "Organization skills"
+        ],
+        "workload": "20 hours/week",
+        "plannedDate": "2024-09-01"
+      }
+    ]
+  },
+
+  "gantt": {
+    "resources": [
+      {
+        "id": "equipment",
+        "title": "Kitchen Equipment",
+        "type": "asset",
+        "items": [
+          {
+            "name": "Professional mixer",
+            "cost": 500,
+            "priority": "high"
+          },
+          {
+            "name": "Baking sheets and pans",
+            "cost": 300,
+            "priority": "high"
+          },
+          {
+            "name": "Storage containers",
+            "cost": 200,
+            "priority": "medium"
+          },
+          {
+            "name": "Portable warmers",
+            "cost": 1000,
+            "priority": "low"
+          }
+        ],
+        "estimatedCost": 2000
+      },
+      {
+        "id": "permits",
+        "title": "Permits and Licenses",
+        "type": "legal",
+        "items": [
+          {
+            "name": "Business license",
+            "cost": 200,
+            "priority": "high"
+          },
+          {
+            "name": "Food handler's permit",
+            "cost": 100,
+            "priority": "high"
+          },
+          {
+            "name": "Home kitchen certification",
+            "cost": 200,
+            "priority": "high"
+          }
+        ],
+        "estimatedCost": 500
+      },
+      {
+        "id": "marketing",
+        "title": "Marketing Materials",
+        "type": "digital",
+        "items": [
+          {
+            "name": "Website development",
+            "cost": 500,
+            "priority": "high"
+          },
+          {
+            "name": "Business cards",
+            "cost": 100,
+            "priority": "medium"
+          },
+          {
+            "name": "Menu templates",
+            "cost": 200,
+            "priority": "medium"
+          },
+          {
+            "name": "Social media assets",
+            "cost": 200,
+            "priority": "medium"
+          }
+        ],
+        "estimatedCost": 1000
+      }
+    ],
+    "timeline": [
+      {
+        "id": "setup-phase",
+        "title": "Business Setup",
+        "start": "2024-04-01",
+        "end": "2024-04-30",
+        "resources": ["permits", "equipment"],
+        "dependencies": [],
+        "progress": 0,
+        "description": "Complete legal requirements and kitchen setup"
+      },
+      {
+        "id": "marketing-phase",
+        "title": "Marketing Setup",
+        "start": "2024-04-15",
+        "end": "2024-05-15",
+        "resources": ["marketing"],
+        "dependencies": ["setup-phase"],
+        "progress": 0,
+        "description": "Establish online presence and marketing materials"
+      }
+    ]
+  },
+
+  "metrics": {
+    "initialTargets": {
+      "monthly": {
+        "catering": {
+          "events": 4,
+          "revenue": 2000,
+          "averageOrderValue": 500
+        },
+        "classes": {
+          "sessions": 8,
+          "students": 24,
+          "revenue": 1200,
+          "averageClassSize": 3
+        },
+        "customOrders": {
+          "orders": 16,
+          "revenue": 800,
+          "averageOrderValue": 50
+        }
+      },
+      "quarterly": {
+        "customerGrowth": "20%",
+        "revenueGrowth": "25%",
+        "repeatCustomers": "40%"
+      }
+    },
+    "kpis": [
+      {
+        "name": "Customer Satisfaction",
+        "target": "4.5/5",
+        "measurement": "Post-service surveys"
+      },
+      {
+        "name": "Social Media Growth",
+        "target": "100 followers/month",
+        "measurement": "Platform analytics"
+      },
+      {
+        "name": "Website Traffic",
+        "target": "500 visits/month",
+        "measurement": "Google Analytics"
+      }
+    ]
+  },
+
+  "documentConnections": [
+    {
+      "from": {
+        "type": "goal",
+        "id": "legal-setup"
+      },
+      "to": {
+        "type": "task",
+        "id": "task-1"
+      },
+      "relationship": "implementation"
+    },
+    {
+      "from": {
+        "type": "goal",
+        "id": "kitchen-setup"
+      },
+      "to": {
+        "type": "gantt",
+        "id": "setup-phase"
+      },
+      "relationship": "timeline"
+    },
+    {
+      "from": {
+        "type": "goal",
+        "id": "recipe-testing"
+      },
+      "to": {
+        "type": "workflow",
+        "id": "recipe-development"
+      },
+      "relationship": "process"
+    }
+  ]
+}

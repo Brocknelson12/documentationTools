@@ -1,0 +1,82 @@
+{
+  "id": "social-media",
+  "title": "Social Media Growth",
+  "color": "#BBF7D0",
+  "isComplete": false,
+  "children": [
+    {
+      "id": "instagram-growth",
+      "title": "Instagram Strategy",
+      "color": "#BBF7D0",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "instagram-followers",
+          "title": "Reach 10k Followers",
+          "color": "#BBF7D0",
+          "isComplete": false
+        },
+        {
+          "id": "instagram-content",
+          "title": "Daily Instagram Content",
+          "color": "#BBF7D0",
+          "isComplete": false,
+          "children": [
+            {
+              "id": "reels-strategy",
+              "title": "Create Reels Strategy",
+              "color": "#BBF7D0",
+              "isComplete": false
+            },
+            {
+              "id": "stories-strategy",
+              "title": "Daily Stories Plan",
+              "color": "#BBF7D0",
+              "isComplete": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "youtube-growth",
+      "title": "YouTube Channel",
+      "color": "#BBF7D0",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "youtube-setup",
+          "title": "Channel Setup",
+          "color": "#BBF7D0",
+          "isComplete": false
+        },
+        {
+          "id": "youtube-content",
+          "title": "Weekly Recipe Videos",
+          "color": "#BBF7D0",
+          "isComplete": false
+        }
+      ]
+    },
+    {
+      "id": "tiktok-growth",
+      "title": "TikTok Presence",
+      "color": "#BBF7D0",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "tiktok-strategy",
+          "title": "Content Strategy",
+          "color": "#BBF7D0",
+          "isComplete": false
+        },
+        {
+          "id": "tiktok-trends",
+          "title": "Trending Topics",
+          "color": "#BBF7D0",
+          "isComplete": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "roles": [
+    {
+      "id": "owner",
+      "title": "Business Owner",
+      "area": "operations",
+      "icon": "Settings",
+      "responsibilities": [
+        "Overall business management",
+        "Menu planning",
+        "Client relations",
+        "Marketing strategy"
+      ],
+      "skills": [
+        "Baking expertise",
+        "Food safety knowledge",
+        "Customer service",
+        "Basic photography"
+      ],
+      "workload": "40 hours/week",
+      "linkedDocuments": [
+        {
+          "type": "goal",
+          "id": "goal-1",
+          "title": "Brand Growth Strategy"
+        },
+        {
+          "type": "workflow",
+          "id": "workflow-1",
+          "title": "Content Approval Process"
+        }
+      ],
+      "reports": ["content-lead", "visual-lead", "community-manager", "product-manager"]
+    },
+    {
+      "id": "content-lead",
+      "title": "Content Lead",
+      "area": "content",
+      "icon": "Pencil",
+      "responsibilities": [
+        "Recipe development",
+        "Content planning",
+        "Quality assurance"
+      ],
+      "skills": [
+        "Recipe writing",
+        "Food styling",
+        "Content strategy"
+      ],
+      "workload": "40 hours/week",
+      "reportsTo": "owner",
+      "linkedDocuments": [
+        {
+          "type": "goal",
+          "id": "goal-2",
+          "title": "Content Strategy"
+        },
+        {
+          "type": "process",
+          "id": "process-1",
+          "title": "Recipe Development"
+        }
+      ]
+    },
+    {
+      "id": "visual-lead",
+      "title": "Visual Lead",
+      "area": "content",
+      "icon": "Camera",
+      "responsibilities": [
+        "Photography direction",
+        "Visual style guide",
+        "Brand aesthetics"
+      ],
+      "skills": [
+        "Photography",
+        "Photo editing",
+        "Visual design"
+      ],
+      "workload": "40 hours/week",
+      "reportsTo": "owner",
+      "linkedDocuments": [
+        {
+          "type": "process",
+          "id": "process-2",
+          "title": "Photography Guidelines"
+        }
+      ]
+    }
+  ]
+}

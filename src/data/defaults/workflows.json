@@ -1,0 +1,229 @@
+{
+  "workflows": [
+    {
+      "id": "recipe-development",
+      "title": "Recipe Development Process",
+      "description": "Step-by-step workflow for creating and testing new recipes",
+      "goalId": "recipe-testing",
+      "nodes": [
+        {
+          "id": "start",
+          "type": "start",
+          "position": { "x": 400, "y": 50 },
+          "text": "Start Recipe Development",
+          "connections": ["research"]
+        },
+        {
+          "id": "research",
+          "type": "task",
+          "position": { "x": 400, "y": 150 },
+          "text": "Research Recipe Ideas",
+          "description": "Research seasonal ingredients and trending recipes",
+          "connections": ["initial-test"]
+        },
+        {
+          "id": "initial-test",
+          "type": "task",
+          "position": { "x": 400, "y": 250 },
+          "text": "Initial Recipe Test",
+          "description": "First test bake with basic measurements",
+          "connections": ["test-review"]
+        },
+        {
+          "id": "test-review",
+          "type": "decision",
+          "position": { "x": 400, "y": 350 },
+          "text": "Recipe Successful?",
+          "description": "Evaluate taste, texture, and presentation",
+          "connections": ["adjust-recipe", "document-recipe"]
+        },
+        {
+          "id": "adjust-recipe",
+          "type": "task",
+          "position": { "x": 200, "y": 450 },
+          "text": "Adjust Recipe",
+          "description": "Modify ingredients or instructions",
+          "connections": ["initial-test"]
+        },
+        {
+          "id": "document-recipe",
+          "type": "task",
+          "position": { "x": 400, "y": 450 },
+          "text": "Document Recipe",
+          "description": "Write detailed recipe instructions",
+          "connections": ["cost-analysis"]
+        },
+        {
+          "id": "cost-analysis",
+          "type": "task",
+          "position": { "x": 400, "y": 550 },
+          "text": "Calculate Costs",
+          "description": "Determine ingredient costs and pricing",
+          "connections": ["end"]
+        },
+        {
+          "id": "end",
+          "type": "end",
+          "position": { "x": 400, "y": 650 },
+          "text": "Recipe Complete",
+          "connections": []
+        }
+      ]
+    },
+    {
+      "id": "catering-service",
+      "title": "Catering Service Process",
+      "description": "End-to-end workflow for handling catering orders",
+      "goalId": "product-development",
+      "nodes": [
+        {
+          "id": "inquiry",
+          "type": "start",
+          "position": { "x": 400, "y": 50 },
+          "text": "Client Inquiry",
+          "connections": ["consultation"]
+        },
+        {
+          "id": "consultation",
+          "type": "task",
+          "position": { "x": 400, "y": 150 },
+          "text": "Initial Consultation",
+          "description": "Discuss event details, preferences, and requirements",
+          "connections": ["menu-planning"]
+        },
+        {
+          "id": "menu-planning",
+          "type": "task",
+          "position": { "x": 400, "y": 250 },
+          "text": "Menu Planning",
+          "description": "Design custom menu based on client needs",
+          "connections": ["quote"]
+        },
+        {
+          "id": "quote",
+          "type": "task",
+          "position": { "x": 400, "y": 350 },
+          "text": "Provide Quote",
+          "description": "Calculate costs and send proposal",
+          "connections": ["approval"]
+        },
+        {
+          "id": "approval",
+          "type": "decision",
+          "position": { "x": 400, "y": 450 },
+          "text": "Client Approval?",
+          "connections": ["deposit", "revise-quote"]
+        },
+        {
+          "id": "revise-quote",
+          "type": "task",
+          "position": { "x": 200, "y": 550 },
+          "text": "Revise Quote",
+          "description": "Adjust menu or pricing",
+          "connections": ["approval"]
+        },
+        {
+          "id": "deposit",
+          "type": "task",
+          "position": { "x": 400, "y": 550 },
+          "text": "Collect Deposit",
+          "description": "Process initial payment",
+          "connections": ["end"]
+        },
+        {
+          "id": "end",
+          "type": "end",
+          "position": { "x": 400, "y": 650 },
+          "text": "Order Confirmed",
+          "connections": []
+        }
+      ]
+    },
+    {
+      "id": "content-creation",
+      "title": "Content Creation Process",
+      "description": "Workflow for creating and publishing food content",
+      "goalId": "online-presence",
+      "nodes": [
+        {
+          "id": "start",
+          "type": "start",
+          "position": { "x": 400, "y": 50 },
+          "text": "Start Content Creation",
+          "connections": ["plan"]
+        },
+        {
+          "id": "plan",
+          "type": "task",
+          "position": { "x": 400, "y": 150 },
+          "text": "Content Planning",
+          "description": "Plan content theme and format",
+          "connections": ["prep"]
+        },
+        {
+          "id": "prep",
+          "type": "task",
+          "position": { "x": 400, "y": 250 },
+          "text": "Content Preparation",
+          "description": "Gather ingredients and equipment",
+          "connections": ["photo-setup"]
+        },
+        {
+          "id": "photo-setup",
+          "type": "task",
+          "position": { "x": 400, "y": 350 },
+          "text": "Photography Setup",
+          "description": "Set up lighting and props",
+          "connections": ["shoot"]
+        },
+        {
+          "id": "shoot",
+          "type": "task",
+          "position": { "x": 400, "y": 450 },
+          "text": "Photo/Video Shoot",
+          "description": "Capture content",
+          "connections": ["review"]
+        },
+        {
+          "id": "review",
+          "type": "decision",
+          "position": { "x": 400, "y": 550 },
+          "text": "Content Review",
+          "description": "Review quality and coverage",
+          "connections": ["edit", "reshoot"]
+        },
+        {
+          "id": "reshoot",
+          "type": "task",
+          "position": { "x": 200, "y": 650 },
+          "text": "Reshoot Content",
+          "description": "Adjust and reshoot",
+          "connections": ["review"]
+        },
+        {
+          "id": "edit",
+          "type": "task",
+          "position": { "x": 400, "y": 650 },
+          "text": "Edit Content",
+          "description": "Edit photos/videos",
+          "connections": ["publish"]
+        },
+        {
+          "id": "publish",
+          "type": "task",
+          "position": { "x": 400, "y": 750 },
+          "text": "Publish Content",
+          "description": "Post to social media",
+          "connections": ["end"]
+        },
+        {
+          "id": "end",
+          "type": "end",
+          "position": { "x": 400, "y": 850 },
+          "text": "Content Published",
+          "connections": []
+        }
+      ]
+    }
+  ]
+}

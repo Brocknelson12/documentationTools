@@ -1,0 +1,76 @@
+{
+  "id": "product-development",
+  "title": "Product Development",
+  "color": "#FBCFE8",
+  "isComplete": false,
+  "children": [
+    {
+      "id": "digital-products",
+      "title": "Digital Products",
+      "color": "#FBCFE8",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "ebook-development",
+          "title": "Recipe eBook",
+          "color": "#FBCFE8",
+          "isComplete": false,
+          "children": [
+            {
+              "id": "ebook-content",
+              "title": "Content Creation",
+              "color": "#FBCFE8",
+              "isComplete": false
+            },
+            {
+              "id": "ebook-design",
+              "title": "Design & Layout",
+              "color": "#FBCFE8",
+              "isComplete": false
+            }
+          ]
+        },
+        {
+          "id": "meal-plans",
+          "title": "Meal Plan Subscription",
+          "color": "#FBCFE8",
+          "isComplete": false
+        }
+      ]
+    },
+    {
+      "id": "physical-products",
+      "title": "Physical Products",
+      "color": "#FBCFE8",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "spice-blends",
+          "title": "Signature Spice Blends",
+          "color": "#FBCFE8",
+          "isComplete": false,
+          "children": [
+            {
+              "id": "spice-development",
+              "title": "Recipe Development",
+              "color": "#FBCFE8",
+              "isComplete": false
+            },
+            {
+              "id": "spice-packaging",
+              "title": "Packaging Design",
+              "color": "#FBCFE8",
+              "isComplete": false
+            }
+          ]
+        },
+        {
+          "id": "merchandise",
+          "title": "Branded Merchandise",
+          "color": "#FBCFE8",
+          "isComplete": false
+        }
+      ]
+    }
+  ]
+}

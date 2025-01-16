@@ -1,0 +1,108 @@
+{
+  "id": "root",
+  "title": "Recipe Business Goals",
+  "color": "#BFDBFE",
+  "isComplete": false,
+  "children": [
+    {
+      "id": "content-1",
+      "title": "Content Strategy",
+      "color": "#BFDBFE",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "content-1-1",
+          "title": "Recipe Development",
+          "color": "#BFDBFE",
+          "isComplete": false,
+          "children": [
+            {
+              "id": "content-1-1-1",
+              "title": "Create 5 Signature Recipes",
+              "color": "#BFDBFE",
+              "isComplete": true
+            },
+            {
+              "id": "content-1-1-2",
+              "title": "Develop Seasonal Menu",
+              "color": "#BFDBFE",
+              "isComplete": false
+            }
+          ]
+        },
+        {
+          "id": "content-1-2",
+          "title": "Visual Content",
+          "color": "#BFDBFE",
+          "isComplete": false,
+          "children": [
+            {
+              "id": "content-1-2-1",
+              "title": "Photo Style Guide",
+              "color": "#BFDBFE",
+              "isComplete": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "community-1",
+      "title": "Community Building",
+      "color": "#BBF7D0",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "community-1-1",
+          "title": "Instagram Growth",
+          "color": "#BBF7D0",
+          "isComplete": false,
+          "children": [
+            {
+              "id": "community-1-1-1",
+              "title": "Reach 5k Followers",
+              "color": "#BBF7D0",
+              "isComplete": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product-1",
+      "title": "Product Line",
+      "color": "#FBCFE8",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "product-1-1",
+          "title": "Digital Products",
+          "color": "#FBCFE8",
+          "isComplete": false,
+          "children": [
+            {
+              "id": "product-1-1-1",
+              "title": "Recipe eBook",
+              "color": "#FBCFE8",
+              "isComplete": false
+            }
+          ]
+        },
+        {
+          "id": "product-1-2",
+          "title": "Physical Products",
+          "color": "#FBCFE8",
+          "isComplete": false,
+          "children": [
+            {
+              "id": "product-1-2-1",
+              "title": "Spice Blend Line",
+              "color": "#FBCFE8",
+              "isComplete": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

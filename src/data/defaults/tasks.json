@@ -1,0 +1,64 @@
+{
+  "groups": [
+    {
+      "id": "setup",
+      "title": "Initial Setup",
+      "tasks": [
+        {
+          "id": "task-1",
+          "title": "Register Business Name",
+          "type": "legal",
+          "status": "not-started",
+          "priority": "high",
+          "dependencies": [],
+          "goalId": "legal-setup",
+          "description": "Complete LLC registration process",
+          "estimatedTime": "5 hours",
+          "deadline": "2024-04-07"
+        },
+        {
+          "id": "task-2",
+          "title": "Kitchen Equipment List",
+          "type": "preparation",
+          "status": "in-progress",
+          "priority": "high",
+          "dependencies": [],
+          "goalId": "kitchen-setup",
+          "description": "Create list of required equipment and costs",
+          "estimatedTime": "2 hours",
+          "deadline": "2024-04-10"
+        }
+      ]
+    },
+    {
+      "id": "recipes",
+      "title": "Recipe Development",
+      "tasks": [
+        {
+          "id": "task-3",
+          "title": "Test Core Recipes",
+          "type": "product",
+          "status": "not-started",
+          "priority": "high",
+          "dependencies": ["task-2"],
+          "goalId": "recipe-testing",
+          "description": "Develop and test 5 signature recipes",
+          "estimatedTime": "15 hours",
+          "deadline": "2024-04-30"
+        },
+        {
+          "id": "task-4",
+          "title": "Create Recipe Documentation",
+          "type": "content",
+          "status": "not-started",
+          "priority": "medium",
+          "dependencies": ["task-3"],
+          "goalId": "recipe-testing",
+          "description": "Document recipes with photos and instructions",
+          "estimatedTime": "10 hours",
+          "deadline": "2024-05-07"
+        }
+      ]
+    }
+  ]
+}

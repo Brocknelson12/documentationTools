@@ -1,0 +1,25 @@
+transformOrigin: '0 0',
+            }}
+          >
+            <GoalNode
+              goal={rootGoal}
+              onAddChild={addChildGoal}
+              onAddSibling={addSiblingGoal}
+              onUpdateGoal={updateGoal}
+              onDeleteGoal={deleteGoal}
+              onChangeCategory={changeCategory}
+              onSelect={handleGoalSelect}
+              selectedGoalId={selectedGoalId}
+              categories={categories}
+              scale={scale}
+              showAllTitles={showAllTitles}
+              isRoot={true}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default GoalNetwork;

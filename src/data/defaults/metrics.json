@@ -1,0 +1,44 @@
+{
+  "initialTargets": {
+    "monthly": {
+      "catering": {
+        "events": 4,
+        "revenue": 2000,
+        "averageOrderValue": 500
+      },
+      "classes": {
+        "sessions": 8,
+        "students": 24,
+        "revenue": 1200,
+        "averageClassSize": 3
+      },
+      "customOrders": {
+        "orders": 16,
+        "revenue": 800,
+        "averageOrderValue": 50
+      }
+    },
+    "quarterly": {
+      "customerGrowth": "20%",
+      "revenueGrowth": "25%",
+      "repeatCustomers": "40%"
+    }
+  },
+  "kpis": [
+    {
+      "name": "Customer Satisfaction",
+      "target": "4.5/5",
+      "measurement": "Post-service surveys"
+    },
+    {
+      "name": "Social Media Growth",
+      "target": "100 followers/month",
+      "measurement": "Platform analytics"
+    },
+    {
+      "name": "Website Traffic",
+      "target": "500 visits/month",
+      "measurement": "Google Analytics"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "content-strategy",
+  "title": "Content Strategy",
+  "color": "#BFDBFE",
+  "isComplete": false,
+  "children": [
+    {
+      "id": "recipe-development",
+      "title": "Recipe Development",
+      "color": "#BFDBFE",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "signature-recipes",
+          "title": "Create 10 Signature Recipes",
+          "color": "#BFDBFE",
+          "isComplete": false,
+          "children": [
+            {
+              "id": "recipe-testing",
+              "title": "Test and Perfect Recipes",
+              "color": "#BFDBFE",
+              "isComplete": false
+            },
+            {
+              "id": "recipe-documentation",
+              "title": "Document Recipe Steps",
+              "color": "#BFDBFE",
+              "isComplete": false
+            },
+            {
+              "id": "recipe-photos",
+              "title": "Professional Food Photography",
+              "color": "#BFDBFE",
+              "isComplete": false
+            }
+          ]
+        },
+        {
+          "id": "recipe-categories",
+          "title": "Develop Recipe Categories",
+          "color": "#BFDBFE",
+          "isComplete": false,
+          "children": [
+            {
+              "id": "quick-meals",
+              "title": "Quick & Easy Meals",
+              "color": "#BFDBFE",
+              "isComplete": false
+            },
+            {
+              "id": "healthy-options",
+              "title": "Healthy Options",
+              "color": "#BFDBFE",
+              "isComplete": false
+            },
+            {
+              "id": "special-occasions",
+              "title": "Special Occasions",
+              "color": "#BFDBFE",
+              "isComplete": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "content-calendar",
+      "title": "Content Calendar",
+      "color": "#BFDBFE",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "weekly-content",
+          "title": "Weekly Content Plan",
+          "color": "#BFDBFE",
+          "isComplete": false
+        },
+        {
+          "id": "seasonal-content",
+          "title": "Seasonal Content Strategy",
+          "color": "#BFDBFE",
+          "isComplete": false
+        }
+      ]
+    }
+  ]
+}

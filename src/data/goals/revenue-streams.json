@@ -1,0 +1,68 @@
+{
+  "id": "revenue-streams",
+  "title": "Revenue Streams",
+  "color": "#FDE68A",
+  "isComplete": false,
+  "children": [
+    {
+      "id": "sponsorships",
+      "title": "Brand Sponsorships",
+      "color": "#FDE68A",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "brand-outreach",
+          "title": "Brand Outreach Strategy",
+          "color": "#FDE68A",
+          "isComplete": false
+        },
+        {
+          "id": "media-kit",
+          "title": "Create Media Kit",
+          "color": "#FDE68A",
+          "isComplete": false
+        }
+      ]
+    },
+    {
+      "id": "coaching",
+      "title": "Cooking Classes",
+      "color": "#FDE68A",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "online-classes",
+          "title": "Online Cooking Classes",
+          "color": "#FDE68A",
+          "isComplete": false
+        },
+        {
+          "id": "private-sessions",
+          "title": "Private Coaching",
+          "color": "#FDE68A",
+          "isComplete": false
+        }
+      ]
+    },
+    {
+      "id": "affiliate",
+      "title": "Affiliate Marketing",
+      "color": "#FDE68A",
+      "isComplete": false,
+      "children": [
+        {
+          "id": "kitchen-tools",
+          "title": "Kitchen Tools & Equipment",
+          "color": "#FDE68A",
+          "isComplete": false
+        },
+        {
+          "id": "ingredient-partners",
+          "title": "Ingredient Partnerships",
+          "color": "#FDE68A",
+          "isComplete": false
+        }
+      ]
+    }
+  ]
+}
